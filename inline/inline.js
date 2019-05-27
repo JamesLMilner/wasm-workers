@@ -68,12 +68,9 @@ function wasmWorker(modulePath) {
             }
         }
 
-        functionBody = func.toString().trim().match(
-            /^function\s*\w*\s*\([\w\s,]*\)\s*{([\w\W]*?)}$/
-        )[1];
-        functionBody = functionBody.replace("WORKER_PATH", wasmPath);
-        
-        const objectUrl = URL.createObjectURL(new Blob([functionBody], { type: "text/javascript" }));
+        // Make sure the wasm path is absolute and turn into IIFE
+        func = `(${func.toString().trim().replace("WORKER_PATH", wasmPath)})()`;
+        const objectUrl = URL.createObjectURL(new Blob([func], { type: "text/javascript" }));
         const worker = new Worker(objectUrl);
         URL.revokeObjectURL(objectUrl);
 
