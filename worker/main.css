@@ -1,0 +1,30 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+main {
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 33vw;
+    margin: auto;
+}
+#calculatePrimes {
+    width: 25vw;
+    margin: 20px;
+    height: 75px;
+    background: #E84855;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#showPrimes {
+    width: 75%;
+    margin: auto;
+    word-wrap: break-word;
+}
+body {
+    margin: 5vw;
+    background: #3185FC;
+}
