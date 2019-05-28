@@ -1,0 +1,29 @@
+{
+  "name": "wasm-workers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesMilnerUK/wasm-workers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesMilnerUK/wasm-workers/issues"
+  },
+  "homepage": "https://github.com/JamesMilnerUK/wasm-workers#readme",
+  "dependencies": {
+    "wasm-worker": "^0.4.0"
+  },
+  "devDependencies": {
+    "serve": "^11.0.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}

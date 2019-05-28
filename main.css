@@ -10,20 +10,6 @@ main {
     width: 33vw;
     margin: auto;
 }
-#calculatePrimes {
-    width: 25vw;
-    margin: 20px;
-    height: 75px;
-    background: #E84855;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-#showPrimes {
-    width: 75%;
-    margin: auto;
-    word-wrap: break-word;
-}
 body {
     margin: 5vw;
     background: #3185FC;

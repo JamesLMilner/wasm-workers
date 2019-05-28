@@ -11,7 +11,7 @@ wasmWorker("./main.wasm").then((wasmProxyInstance) => {
             console.error("Something went wrong...", error);
         })
 });
-
+    
 // // With async/await
 // const wasmProxyModule = await wasmWorker();
 // const result = await wasmProxyModule.add(2, 3);

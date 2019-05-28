@@ -6,14 +6,6 @@ wasmWorker("./main.wasm").then((wasmProxyInstance) => {
         .catch((error) => {
             console.error(error);
         });
-
-    wasmProxyInstance.divide(100, 10)
-        .then((result) => {
-            console.log(result); // 10
-        })
-        .catch((error) => {
-            console.error(error);
-        });
 });
 
 function wasmWorker(modulePath) {
